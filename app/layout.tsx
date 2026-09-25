@@ -13,8 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hatch Analytics",
-  description: "Hatch Analytics — work in progress.",
+  title: "Hatch Analytics — AI & analytics consultancy",
+  description:
+    "Hatch Analytics helps teams turn messy data into decisions. Analytics foundations, decision systems, measurement, and fractional leadership.",
+  metadataBase: new URL("https://hatchdata.us"),
+  openGraph: {
+    title: "Hatch Analytics",
+    description:
+      "AI and analytics consultancy that turns messy data into decisions.",
+    url: "https://hatchdata.us",
+    siteName: "Hatch Analytics",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +37,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        {children}
+      </body>
     </html>
   );
 }
