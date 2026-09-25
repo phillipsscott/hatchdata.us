@@ -1,22 +1,10 @@
-# Hatch Analytics
+# hatchdata.us
 
-Next.js (App Router) craft mockup for Hatch Analytics.
+Hatch Analytics — AI and analytics consultancy landing (craft mockup).
 
-Production for hatchdata.us remains on Squarespace. This repo is a design/dev mockup only — not the live custom-domain target.
-
-## Stack
-
-- Next.js (App Router) + TypeScript
-- Tailwind CSS
-- ESLint
-
-## Develop
+Production domain stays on Squarespace until migrate. This repo is the Next.js craft/preview.
 
 ```bash
 npm install
 npm run dev
 ```
-
-## Status
-
-WIP landing shell with section placeholders (Hero / Services / Approach / Proof / Contact).
